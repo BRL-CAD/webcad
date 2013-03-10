@@ -10,7 +10,6 @@ fragmentShaderCode=
 '  gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);'+
 '}';
 
-// GLSL ES code to be compiled as vertex shader
 vertexShaderCode=
 'attribute vec3 ppos;'+
 'uniform mat4 mvp;'+
@@ -16784,7 +16783,7 @@ function getTransformationMatrix(rx, ry, rz)
   return new Float32Array([cy*cz, (sx*sy*cz-cx*sz), (sx*sz+cx*sy*cz), 0,
                            cy*sz, (sx*sy*sz+cx*cz), (cx*sy*sz-sx*cz), 0,
                            -sy,   sx*cy,            cx*cy,            0,
-                           0,     0,                0,                4500]);
+                          -700.,     495.819824,               -1500.,                6500]);
 }
 
     </script>
