@@ -77,7 +77,7 @@
         {
             var canvas = document.getElementById('glcanvas');
 
-            try {gl = canvas.getContext('experimental-webgl');}
+            try {gl = canvas.getContext("webgl") || canvas.getContext("experimental-webgl");}
             catch(e) {alert('Exception catched in getContext: '+e.toString());return;}
             if(!gl) {alert('Unable to create Web GL context');return;}
 
